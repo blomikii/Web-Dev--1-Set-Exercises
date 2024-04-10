@@ -1,0 +1,70 @@
+body {
+  --s: 150px;
+  background:
+      linear-gradient(135deg, #0000 18.75%, #F7EDE2 0 31.25%, #0000 0),
+      repeating-linear-gradient(45deg, #F7EDE2 -6.25% 6.25%, #ebcfcbbb 0 18.75%);
+  background-size: var(--s) var(--s); 
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+.container {
+  max-width: 400px;
+  padding: 70px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Paytone One', sans-serif;
+  color: #F46197;
+  font-size: 50px;
+}
+
+.calculator {
+  margin-bottom: 20px;
+}
+
+label {
+  font-family: 'Outfit', sans-serif;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  font-size: 15px;
+  font-family: 'Outfit', sans-serif;
+  width: 100%;
+  padding: 10px;
+  background-color: #4ca5af;
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; 
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #F46197;
+}
+
+p {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  font-weight: bold;
+}
