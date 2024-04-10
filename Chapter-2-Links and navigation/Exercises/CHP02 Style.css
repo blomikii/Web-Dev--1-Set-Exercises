@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');
 
-html { /*background from CSS */
+html { /*background from https://freefrontend.com/css-background-patterns/ */
     --s: 55px; /* control the size */
     --b: 25px; /* control the thickness of the curved lines */
     
@@ -64,8 +64,6 @@ header h1 {
     margin: 0;
     padding: 0;
 }
-
-
 
 /* ABOUT */
 
@@ -143,8 +141,8 @@ header h1 {
 
 .crew-member {
     margin-bottom: 20px;
-    display: flex; /* Use flexbox */
-    justify-content: space-between; /* Space elements evenly */
+    display: flex; 
+    justify-content: space-between; 
 }
 
 .crew-member h3 {
@@ -161,5 +159,5 @@ header h1 {
     text-align: right;
 }
 
-/* REVIEWS */
+/* REVIEWS sections has the same format as the CAST section */
 
