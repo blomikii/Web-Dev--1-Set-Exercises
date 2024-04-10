@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');
 
-html {
+html { /*background from CSS */
     --s: 55px; /* control the size */
     --b: 25px; /* control the thickness of the curved lines */
     
@@ -26,33 +26,6 @@ body{
 .container-1{
     background-color: #EEF0EB;
 }
-
-/* .navbar{
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #4785AE;
-}
-
-.navbar a{
-    text-decoration: none;
-    margin: 20px;
-}
-
-header{
-    font-family: 'DM Sans', sans,sans-serif;
-    font-weight: 700;
-    font-size: 50px;
-    color: #4785AE;
-    text-align: center;
-}
-
-header h1{
-    margin: 0;
-    padding: 0;
-} */
 
 .navbar {
     font-family: 'DM Sans', sans-serif;
