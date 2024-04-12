@@ -2,123 +2,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spicy+Rice&display=swap');
 
 body, main{
-    margin: 0;
+    /* Removes default browser settings */
+    margin: 0; /* The space between the content of an element and its border */
     padding: 0;
 }
 
 /*HEADER*/
-.heading{
+.heading{ /*Accesses the 'heading' class*/
     font-family: 'Gasoek One', sans-serif;
     font-size: 40px;
+
     letter-spacing: 1px;
-    color: rgb(250, 249, 248);
-    text-shadow: -1px -1px 0 #8e0000, 1px -1px 0 #8e0000, -1px 1.5px 0 #8e0000, 1px 1px 0 #8e0000; /* to create outline around the text*/
+
+    color: rgb(250, 249, 248); /* Content color */
+
+    text-shadow: -1px -1px 0 #8e0000, 1px -1px 0 #8e0000, -1px 1.5px 0 #8e0000, 1px 1px 0 #8e0000; /* To create outline around the text*/
     text-align: center;
-    padding: 35px;
+
+    padding: 35px; /* The space between the content of an element and its border */
 }
 
 /*NAVIGATION BAR*/
 nav{
     font-size: 15px;
-    text-align: center;
-    padding: 12px;
-    border-top: 1px solid rgb(62, 122, 115);
+
+    text-align: center; /* Aligns text to center */
+
+    padding: 12px; 
+
+    border-top: 1px solid rgb(62, 122, 115); /* Adds a border in the specified side */
     border-bottom: 1px solid rgb(62, 122, 115); 
+
     background-color: rgb(239, 247, 246);
 }
 
 a{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    text-decoration: none;
+
+    text-decoration: none; /* Removes the links' underline */
     color: rgb(62, 122, 115);
+
     padding-left: 30px;
     padding-right: 30px;
+
+    /* Transition animation is set */
     transition: color 0.2s ease-in;
 }
 
-/* the :hover pseudo class allows hover animations */
+/* The :hover pseudo class allows hover animations */
 a:hover{
-    color: #8e0000;
+    color: #8e0000; /* The text color change transition is triggered on hover */
 }
 
 
 /*ABOUT */
-.sec1{
+.sec1{ /*Accesses the 'sec1' class*/
     display: flex;
-    padding: 100px;
     justify-content: center;
     align-items: center;
-    background: rgb(238,237,174);
-    background: radial-gradient(circle, rgba(238,237,174,1) 57%, rgba(243,163,168,1) 84%, rgba(255,0,138,1) 100%);
+
+    padding: 100px;
+
+    background: radial-gradient(circle, rgba(238,237,174,1) 57%, rgba(243,163,168,1) 84%, rgba(255,0,138,1) 100%); /* Circular gradient background */
 }
 
 h1{
     font-family: 'Spicy Rice', serif;
-    letter-spacing: 1px;
+
     color: rgb(253, 255, 223);
     text-shadow: -1px -1px 0 #8e0000, 1px -1px 0 #8e0000, -1px 1.5px 0 #8e0000, 1px 1px 0 #8e0000;
+
     letter-spacing: 2px;
 }
 
-.content{
+.content{ /*Accesses the 'content' class*/
     margin: 100px auto;
 }
 
-.mng-grm{
+.mng-grm{ /*Accesses the 'mng-grm' class*/
     width: 450px;
 }
 
-p{
-    text-align: justify;
+p{ 
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
+
+    text-align: justify;
+   
     color: rgb(41, 0, 95);
 }
 
 /*INGREDIENTS */
-.sec2{
+.sec2{ /*Accesses the 'sec2' class*/
     padding: 100px;
+
     background-color: rgb(238, 248, 255);
+
     border-top: 1px double rgb(62, 122, 115);
     border-bottom: 1px solid rgb(62, 122, 115);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    /* Centers the contents vertically and horizontally */
+    display: flex; /* Allows flexbox */
+    align-items: center; /* Centers vertically */
+    justify-content: center; /* Centers horizontally */
 }
 
-.content-2{
+.content-2{ /*Accesses the 'content-2' class*/
     margin: 100px auto;
 }
 
 h2{
     font-family: 'Spicy Rice', serif;
+
     letter-spacing: 1px;
     color: rgb(240, 164, 0);
 }
 
 ul{
-    list-style: square;
+    list-style: square; /* Changes the default bullet list-style to square */
+
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
 }
 
 li{
-    line-height: 30px;
+    line-height: 30px; /* Spacing between list items */
 }
 
-.mangoes{
+.mangoes{ /*Accesses the 'mangoes' class*/
     width: 500px;
 }
 
 /*INSTRUCTIONS */
 
-.sec3{
+.sec3{ /*Accesses the 'sec3' class*/
     padding: 130px;
 }
 
 ol{
-    list-style: square;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
 }
@@ -133,8 +155,11 @@ footer{
 h5{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+
     letter-spacing: -0.2px;
-    color: rgb(62, 122, 115);
     text-align: center;
+
+    color: rgb(62, 122, 115);
+    
 }
 
