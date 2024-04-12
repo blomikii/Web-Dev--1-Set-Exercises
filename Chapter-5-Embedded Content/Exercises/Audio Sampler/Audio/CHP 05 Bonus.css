@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Silkscreen:wght@400;700&display=swap');
 
-html {
+html { 
     --s: 60px; /* control the size */
     --c1: #000000;
     --c2: #3b232d;
@@ -16,16 +16,19 @@ html {
 
 body {
     font-family: 'DM Sans', sans-serif;
-    text-align: center;
+    text-align: center; /* Aligns all text in the center */
 }
   
 .header{
     font-family: 'Silkscreen', sans-serif;
-    padding: 30px;
-    background-color: aliceblue;
+
     margin: 180px;
-    border-radius: 30px 10px;
+    padding: 30px;
+
+    background-color: aliceblue;
     color: #1c6a1f;
+
+    border-radius: 30px 10px;
 }
   
 .soundboard {
@@ -42,12 +45,14 @@ body {
   
 h1 {
     margin-bottom: 10px;
-    border-radius: 30px 10px;
     margin: 0;
+
+    border-radius: 30px 10px;
+    
     padding: 0;
 }
   
 audio {
-    display: none;
+    display: none; /* Removes the display for audio */
 }
   
