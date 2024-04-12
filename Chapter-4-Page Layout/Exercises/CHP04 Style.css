@@ -1,40 +1,57 @@
 body{
     background-color: white;
+
+    /* Removes default browser settings */
     margin: 0;
     padding: 0;
+
+    height: 100vh; /* Full viewport height */
 }
 
+/* Styling for the 'DIGI FEST 2022' header */
 header{
     font-family: 'Tahoma', sans-serif;
     font-weight: 700;
     font-size: 45px;
+
     color: white;
     background-color: #17072b;
+
     text-align: center;
     padding: 40px;
 }
 
+/* Styling for the navigation bar */
 nav{
     font-size: 25px;
-    text-align: center;
+    
     background-color: #17072b;
+
     padding-bottom: 30px;
+    text-align: center;
 }
 
+/* Styling for the navigation links */
 nav a{
     font-family: 'Arial', sans-serif;
     font-weight: 400;
-    text-decoration: none;
+
+    text-decoration: none; /* Removes the underline of the links */
     color: white;
+
+    /* Spacing between the links */
     padding-left: 20px;
     padding-right: 20px;
 }
 
+/* Container for the left sidebar */
 .con-1{
     margin-left: 30px;
     width: 60%;
     float: left;
 }
+
+
 
 h1{
     font-family: 'Tahoma', sans-serif;
@@ -46,53 +63,73 @@ p{
     font-family: 'Arial';
 }
 
-.con-2{
+/* Container for the right sidebar */
+.container-2{
     float: right;
     width: 37%;
 }
 
-.con-3{
+/* Right sidebar's background formatting*/
+.con-2{
     margin-left: 20px;
+    height: 590px;
+
     background-color: #172d67;
     color: white;
-    height: 590px;
+    
 }
 
+/* Line-up Header */
 .line-up{
-    text-indent: 20px;
     font-family: 'Tahoma', sans-serif;
     font-weight: 700;
+    
+    text-indent: 20px;
+   
 }
 
+/* Styling for the unordered list */
 ul{
     list-style: none;
+    
     font-family: 'Arial', sans-serif;
     font-size: 30px;
+    
     padding: 0;
 }
 
 li{
-    margin-bottom: 25px;
+    margin-bottom: 25px; /* Spacing between list items */
     text-indent: 20px;
 }
 
-.img-1{
+
+/* Styling for the images */
+
+.img-1{ /* Left sidebar image */
+    /* Image sizing */
     height: 387px;
     width: 900px;
 }
 
-.img-2, .img-3{
-    width: 45%;
+.img-2, .img-3{ /* Right sidebar images */
+    width: 45%; /* Image size */
+
+    /* Positioning */
     margin-left: 15px;
     margin-top: 60px;
 }
 
+
+/* Styling for the Footer */
 footer{
     margin-top: 630px;
+    padding: 15px;
+
     font-family: 'Arial', sans-serif;
     font-size: 20px;
     text-align: center;
-    padding: 15px;
+    
     background-color: #8c15e9;
     color: #FFFFFF;
 }  
