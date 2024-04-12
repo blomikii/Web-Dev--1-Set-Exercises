@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Tangerine:wght@400;700&display=swap');
 
 body{
+    /* Removes default browser settings */
     margin: 0;
     padding: 0;
+
     background-color: #090302;
 
+    /* Centers content */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,28 +16,31 @@ body{
 .container-1{
     margin: 100px auto;
     width: 70%;
-    flex-direction: column;
 }
 
+/* Image container stylings and formatting */
 .pic-1{
     background-color: #F4EBE8;
     border-radius: 20px 90px;
+    
     padding: 70px;
     margin: 50px;
 }
 
+/* Image stylings */
 img{
     width: 525px;
     height: 300px;
 
-    float: left;
+    float: left; /* Places images on the left */
 
-    border-radius: 20px;
-    border: 5px solid rgb(170, 0, 0);
+    border-radius: 20px; /* Corner roundness */
+    border: 5px solid rgb(170, 0, 0); /* Places border on the image */
 
-    margin-right: 40px;
+    margin-right: 40px; /* Spacing between the image and captions */
 }
 
+/* Heading stylings */
 h1{
     font-family: 'Tangerine', cursive;
     font-size: 70px;
@@ -42,11 +48,14 @@ h1{
     color: rgb(170, 0, 0);
 }
 
+/* Paragraph stylings */
 p{
     font-family: 'Lexend', sans-serif;
     font-size: 15px;
+
     color: rgb(170, 0, 0);
-    text-align: left;
+
+    text-align: left; /* Aligns text to the left */
     margin: 40px;
 }
 
