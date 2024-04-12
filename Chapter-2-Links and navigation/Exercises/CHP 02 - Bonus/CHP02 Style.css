@@ -19,10 +19,12 @@ html { /*background from https://freefrontend.com/css-background-patterns/ */
 }
   
 body{
+    /* Removes default browser settings */
     margin: 0;
     padding: 0;
 }
 
+/* Container for the navigation bar and header */
 .container-1{
     background-color: #EEF0EB;
 }
@@ -31,35 +33,45 @@ body{
     font-family: 'DM Sans', sans-serif;
     font-weight: 300;
     font-size: 20px;
+
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #4785AE;
 }
 
 .navbar a {
-    text-decoration: none;
+    text-decoration: none; /* Removes the underline of the links */
+
     margin: 20px;
-    display: inline-block;
-    padding: 10px 20px;
+    display: inline-block; /* Displays content horizontally */
+    padding: 10px 20px; /* Padding for top and right sides */
+
     border: 2px solid #4785AE;
     border-radius: 5px;
+
     color: #4785AE;
-    transition: background-color 0.3s, color 0.3s;
+
+    transition: background-color 0.3s, color 0.3s; /* Transition animation is set */
 }
 
+/* Triggers the transition from above */
 .navbar a:hover {
     background-color: #4785AE;
     color: white;
 }
 
+/* Header styling */
 header {
     font-family: 'DM Sans', sans, sans-serif;
     font-weight: 700;
     font-size: 50px;
+
     color: #4785AE;
+
     text-align: center;
 }
 
+/* Styling for the 'h1' tag nested inside Header */
 header h1 {
     margin: 0;
     padding: 0;
@@ -68,11 +80,10 @@ header h1 {
 /* ABOUT */
 
 .container-2{
-    background-color: #EEF0EB;
-    margin-left: 180px;
-    margin-right: 180px;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    background-color: #EEF0EB; 
+
+    margin: 90px 180px 90px 180px; /* margin for top, right, bottom, left sides */
+
     padding: 50px;
     border-radius: 20px 80px;
 }
@@ -81,12 +92,14 @@ header h1 {
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 50px;
+
     color: #4785AE;
 }
 
 .container-2 p{
     font-family: 'Fortuna', serif;
     font-size: 30px;
+
     text-align: justify;
     color: #4785AE;
 }
@@ -97,6 +110,7 @@ header h1 {
     background-color: #EEF0EB;
     border-radius: 20px 90px;
     padding: 50px;
+
     margin-bottom: 40px;
     margin-top: 40px;
     margin: 70px;
@@ -105,12 +119,14 @@ header h1 {
 .captions h1{
     font-family: 'DM Sans', sans-serif;
     font-size: 50px;
+
     color: rgb(170, 0, 0);
 }
 
 .captions p{
     font-family: 'Fortuna', serif;
     font-size: 30px;
+
     color: rgb(170, 0, 0);
     text-align: justify;
 }
@@ -120,14 +136,17 @@ header h1 {
 .container-4{
     margin-top: 5em;
     margin-bottom: 5em;
+
     color: #4785AE;
 }
 
 .movie-credits {
     border-radius: 30px;
+
     padding: 40px;
     max-width: 600px;
     margin: 0 auto;
+
     background-color: #EEF0EB;
 }
 
@@ -135,7 +154,9 @@ header h1 {
     font-family: 'DM Sans', sans-serif;
     font-size: 40px;
     font-weight: bold;
+
     margin-bottom: 20px;
+
     text-align: center;
 }
 
@@ -149,15 +170,16 @@ header h1 {
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
     font-weight: bold;
+
     margin: 0;
 }
 
 .crew-member p {
     font-family: 'Fortuna', serif;
     font-size: 20px;
+
     margin: 0;
     text-align: right;
 }
 
 /* REVIEWS sections has the same format as the CAST section */
-
