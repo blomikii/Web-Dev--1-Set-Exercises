@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');
+
+html { /*background from https://freefrontend.com/css-background-patterns/ */
+    --s: 55px; /* control the size */
+    --b: 25px; /* control the thickness of the curved lines */
+    
+    --_r: calc(1.28*var(--s) + var(--b)/2) at top 50%;
+    --_f: calc(99.5% - var(--b)),#EEF0EB calc(101% - var(--b)) 99.5%,#00000000 101%;
+    --_g0: calc(-.8*var(--s)), #FFD6AF var(--_f);
+    --_g1: calc(-.8*var(--s)), #EED2CC var(--_f);
+    --_s: calc(1.8*var(--s) + var(--b));
+    background: 
+      radial-gradient(var(--_r) right var(--_g0)) calc(-1*var(--_s)) var(--s),
+      radial-gradient(var(--_r) left  var(--_g1))         var(--_s)  calc(-1*var(--s)),
+      radial-gradient(var(--_r) right var(--_g1)) calc(var(--_s)/-2) calc(-1*var(--s)),
+      radial-gradient(var(--_r) left  var(--_g0)) calc(var(--_s)/ 2) var(--s),
+      linear-gradient(90deg,#FFD6AF 50%,#EED2CC 0);
+    background-size: var(--_s) calc(4*var(--s)); 
+}
+  
+body{
+    /* Removes default browser settings */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the navigation bar and header */
+.container-1{
+    background-color: #EEF0EB;
+}
+
+/*  */
+.navbar {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #4785AE;
+}
+
+.navbar a {
+    text-decoration: none; /* Removes the underline of the links */
+
+    margin: 20px;
+    display: inline-block; /* Displays content horizontally */
+    padding: 10px 20px; /* Padding for top and right sides */
+
+    border: 2px solid #4785AE;
+    border-radius: 5px;
+
+    color: #4785AE;
+
+    transition: background-color 0.3s, color 0.3s; /* Transition animation is set */
+}
+
+/* Triggers the transition from above */
+.navbar a:hover {
+    background-color: #4785AE;
+    color: white;
+}
+
+/* Header styling */
+header {
+    font-family: 'DM Sans', sans, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+
+    color: #4785AE;
+
+    text-align: center;
+}
+
+/* Styling for the 'h1' tag nested inside Header */
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* ABOUT */
+
+.container-2{
+    background-color: #EEF0EB; 
+
+    margin: 90px 180px 90px 180px; /* margin for top, right, bottom, left sides */
+
+    padding: 50px;
+    border-radius: 20px 80px;
+}
+
+.container-2 h2{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+
+    color: #4785AE;
+}
+
+.container-2 p{
+    font-family: 'Fortuna', serif;
+    font-size: 30px;
+
+    text-align: justify;
+    color: #4785AE;
+}
+
+/* CAST */
+
+.container-wrapper{
+    background-color: #EEF0EB;
+    border-radius: 20px 90px;
+    padding: 50px;
+
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin: 70px;
+}
+
+.captions h1{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 50px;
+
+    color: rgb(170, 0, 0);
+}
+
+.captions p{
+    font-family: 'Fortuna', serif;
+    font-size: 30px;
+
+    color: rgb(170, 0, 0);
+    text-align: justify;
+}
+
+/* CREATIVE TEAM */
+
+.container-4{
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+    color: #4785AE;
+}
+
+.movie-credits {
+    border-radius: 30px;
+
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    background-color: #EEF0EB;
+}
+
+.movie-credits h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.crew-member {
+    margin-bottom: 20px;
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.crew-member h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    margin: 0;
+}
+
+.crew-member p {
+    font-family: 'Fortuna', serif;
+    font-size: 20px;
+
+    margin: 0;
+    text-align: right;
+}
+
+/* REVIEWS sections has the same format as the CAST section */
+
+/* Header stylings and formattings */
+.cast-header{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 60px;text-align: center;
+
+    color: #4785AE;
+    background-color: #EEF0EB;
+
+    padding: 20px;
+    
+}
+
+.credits-header{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 60px;
+
+    text-align: center;
+    
+    color: #4785AE;
+    background-color: #EEF0EB;
+
+    padding: 20px; 
+}
+
+.reviews-header{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 60px;
+    
+    text-align: center;
+
+    color: #4785AE;
+    background-color: #EEF0EB;
+
+    padding: 20px; 
+}
