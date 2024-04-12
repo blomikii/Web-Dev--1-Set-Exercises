@@ -1,17 +1,20 @@
 body {
-  --s: 150px;
+  --s: 150px; /*background from https://freefrontend.com/css-background-patterns/ */
   background:
       linear-gradient(135deg, #0000 18.75%, #F7EDE2 0 31.25%, #0000 0),
       repeating-linear-gradient(45deg, #F7EDE2 -6.25% 6.25%, #ebcfcbbb 0 18.75%);
   background-size: var(--s) var(--s); 
+/* Removes the dafault settings of the page */
   margin: 0;
   padding: 0;
+/* centers the contents */
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  height: 100vh; 
+  height: 100vh; /* full height of the viewport */
 }
 
+/* Styling for the calculator's container */
 .container {
   max-width: 400px;
   padding: 70px;
@@ -21,50 +24,61 @@ body {
   text-align: center;
 }
 
+/* Header */
 h1 {
   font-family: 'Paytone One', sans-serif;
-  color: #F46197;
   font-size: 50px;
+  
+  color: #F46197;
 }
 
+/* Contents of the calculator responsible for inputs */
 .calculator {
   margin-bottom: 20px;
 }
 
+/* Styling for all the labels */
 label {
   font-family: 'Outfit', sans-serif;
+
   display: block;
   margin-bottom: 5px;
 }
 
+/* Styling for all the input fields */
 input {
   width: 95%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Spacing between the input fields */
+
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
+/* Styling for the button */
 button {
   font-size: 15px;
   font-family: 'Outfit', sans-serif;
+
   width: 100%;
   padding: 10px;
+  margin-top: 10px; /* Distance from the last input field */
+
   background-color: #4ca5af;
   color: #fff; 
+
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s; 
-  margin-top: 10px;
+
+  cursor: pointer; /* changes curser style to pointer */
+  transition: background-color 0.3s; /* smooth transition to another color */
 }
 
 button:hover {
-  background-color: #F46197;
+  background-color: #F46197; /* color change transition */
 }
 
 p {
   font-family: 'Outfit', sans-serif;
-  margin: 0;
   font-weight: bold;
 }

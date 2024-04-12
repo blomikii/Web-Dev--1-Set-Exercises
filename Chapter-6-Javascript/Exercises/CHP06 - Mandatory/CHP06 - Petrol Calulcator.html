@@ -9,19 +9,27 @@
 </head>
 <body>
     <div class="container">
+        <!-- Header -->
         <h1>Petrol Calculator</h1>
 
         <div class="calculator">
+            <!-- Label for Cost of Petrol -->
             <label for="cost">Cost of Petrol <i>per litre:</i></label>
+            <!-- Input form to enter the cost of petrol, with the default value set to 1.72 -->
             <input type="number" id="cost" value="1.72">
             
-            <label fore="litres">No. of Litres purchased:</label>
+            <!-- Label for litres purchased-->
+            <label for="litres">No. of Litres purchased:</label>
+            <!-- Input form for litres purchased -->
             <input type="number" id="litres" value="0">
 
+            <!-- A button that executes the calculation -->
             <button id="calculate">Calculate</button>
         </div>
 
+        <!-- Label for total price -->
         <label for="result">Total:</label>
+        <!-- Result is shown below using JS -->
         <p id="result"></p>
     </div>
 
